@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="main-item">
+        <div class="main-item-empty"></div>
+        <div class="main-item-form">
+          <div class="item-form-inputs">
+            <div class="form-inputs-buttons">
+                <a href="signup.html" class="reg-butons reg-buttons1">ثبت نام</a>
+                <a href="login.html" class="reg-butons reg-buttons2">ورود</a>
+            </div>
+            <div class="form-inputs-textarea">
+              <label dir="rtl" for="phone_number">ایمیل یا شماره همراه خود را وارد کنید.</label>
+              <input type="text" name="" id="phone_number" value="" class="textarea-input">
+              <label dir="rtl" for="password">رمز عبور خود را وارد کنید.</label>
+              <input type="password" name="" id="password" value="" class="textarea-input">
+              <button dir="rtl" type="button" name="button" class="enter-button">وارد شوید</button>
+              <div class="pass-recovery-div">
+                <a href="#" dir="rtl" class="password-recovery">بازیابی رمز عبور</a>
+              </div>
+            </div>
+          </div>
+          <div class="item-form-explain">
+            <p dir="rtl">نکاتی برای امنیت بیشتر</p>
+            <ul dir="rtl">
+              <li>نام کاربری و رمز خود را در اختیار سایرین قرار ندهید.</li>
+              <li>از رمز عبوری استفاده کنید که حدس زدن آن برای دیگران غیرممکن باشد.</li>
+              <li>پس از خرید بلیط در فضاهای اشتراکی مثل کافی‌نت‌ها، حتما از حساب خود خارج شوید.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-item-empty"></div>
+      </div>
+{% endblock %}

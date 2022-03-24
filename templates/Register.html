@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="main-item">
+        <div class="main-item-empty"></div>
+        <div class="main-item-form">
+          <div class="item-form-inputs">
+            <div class="form-inputs-buttons">
+                <a href="signup.html" class="reg-butons reg-buttons1">ثبت نام</a>
+                <a href="login.html" class="reg-butons reg-buttons2">ورود</a>
+            </div>
+            <div class="form-inputs-textarea">
+              <div class="inputs-textarea-forms">
+                <label dir="rtl" for="email" class="email_label">ایمیل (الزامی)</label>
+                <label dir="rtl" for="phone_number" class="phone_number_label">تلفن همراه (الزامی)</label>
+                <label dir="rtl" for="password" class="password_label">رمزعبور (الزامی)</label>
+                <label dir="rtl" for="copy_password" class="copy_password_label">تکرار رمزعبور (الزامی)</label>
+                <input type="email" name="" value="" id="email" class="email">
+                <input type="text" name="" value="" id="phone_number" class="phone_number">
+                <input type="password" name="" value="" id="password" class="password">
+                <input type="password" name="" value="" id="copy_password" class="copy_password">
+              </div>
+              <div class="inputs-checkbox-buttons">
+                <input type="checkbox" name="rules" value="" class="checkbox-1">
+                <label for="rules" class="checkbox-1-label" dir="rtl"><a href="#">قوانین و مقررات سفرهای علی‌بابا</a> را می پذیرم</label>
+                <input type="checkbox" name="newsletter" value="" class="checkbox-2">
+                <label for="newsletter" class="checkbox-2-label" dir="rtl">مایل به دریافت خبرنامه و ایمیل‌های علی‌بابا هستم.</label>
+              </div>
+              <button dir="rtl" type="button" name="button" class="signup-button">ثبت نام</button>
+            </div>
+          </div>
+          <div class="item-form-explain">
+            <p dir="rtl">نکاتی برای امنیت بیشتر</p>
+            <ul dir="rtl">
+              <li>نام کاربری و رمز خود را در اختیار سایرین قرار ندهید.</li>
+              <li>از رمز عبوری استفاده کنید که حدس زدن آن برای دیگران غیرممکن باشد.</li>
+              <li>پس از خرید بلیط در فضاهای اشتراکی مثل کافی‌نت‌ها، حتما از حساب خود خارج شوید.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-item-empty"></div>
+      </div>
+{% endblock %}
